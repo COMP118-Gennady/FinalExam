@@ -37,7 +37,7 @@ int main()
 		showMenu();
 		cin >> choice;
 		switch (choice) {
-		case 1: //readArray
+		case 1: readArray(array);
 			break;
 		case 2: //showArray
 			break;
@@ -66,5 +66,18 @@ void showMenu()
 	cout << "4) Make all elements of the array 0 \n";
 	cout << "5) Exit \n";
 	cout << "Please enter your choice: ";
+}
+
+/**
+ * Function <code>readArray</code> reads new elements into the array.
+ * <BR>
+ * @param a An array to be manipulated
+ */
+void readArray(int a[ARRAY_SIZE])
+{
+	cout << "Please enter new elements of the array: \n";
+	for (int i = 0; i < ARRAY_SIZE; i++) {
+		cin >> a[i];
+	}
 }
 
