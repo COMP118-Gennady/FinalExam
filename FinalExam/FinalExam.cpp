@@ -45,9 +45,9 @@ int main()
 			break;
 		case 4: nullArray(array);
 			break;
-		case 5: //Exit
+		case 5: cout << "Goodbye!";
 			break;
-		default:
+		default: cerr << "Invalid choice! Please try again \n";
 			break;
 		}
 	} while (choice != 5);
