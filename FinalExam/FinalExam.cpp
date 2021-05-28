@@ -31,7 +31,7 @@ const int ARRAY_SIZE = 15;
 int main()
 {
 	int choice;
-	int array[ARRAY_SIZE];
+	int array[ARRAY_SIZE] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 	do {
 		showMenu();
