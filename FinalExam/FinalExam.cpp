@@ -41,7 +41,7 @@ int main()
 			break;
 		case 2: showArray(array);
 			break;
-		case 3: //sumOfArray
+		case 3: cout << sumOfArray(array) << endl;
 			break;
 		case 4: //nullArray
 			break;
@@ -79,6 +79,7 @@ void readArray(int a[ARRAY_SIZE])
 	for (int i = 0; i < ARRAY_SIZE; i++) {
 		cin >> a[i];
 	}
+	cout << endl;
 }
 
 /**
@@ -91,5 +92,21 @@ void showArray(const int a[ARRAY_SIZE])
 	for (int i = 0; i < ARRAY_SIZE; i++) {
 		cout << a[i] << " ";
 	}
+	cout << endl;
+}
+
+/**
+ * Function <code>sumOfArray</code> computes the sum of all elements in the array.
+ * <BR>
+ * @param a An array to be summed
+ * @return sum Result of the addition
+ */
+int sumOfArray(int a[ARRAY_SIZE])
+{
+	int sum = 0;
+	for (int i = 0; i < ARRAY_SIZE; i++) {
+		sum += a[i];
+	}
+	return sum;
 }
 
