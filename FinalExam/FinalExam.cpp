@@ -16,7 +16,7 @@ using namespace std;
 //Function prototypes
 void showMenu();
 void readArray(int[]);
-void showArray(int[]);
+void showArray(const int[]);
 int sumOfArray(int[]);
 void nullArray(int[]);
 
@@ -39,7 +39,7 @@ int main()
 		switch (choice) {
 		case 1: readArray(array);
 			break;
-		case 2: //showArray
+		case 2: showArray(array);
 			break;
 		case 3: //sumOfArray
 			break;
@@ -78,6 +78,18 @@ void readArray(int a[ARRAY_SIZE])
 	cout << "Please enter new elements of the array: \n";
 	for (int i = 0; i < ARRAY_SIZE; i++) {
 		cin >> a[i];
+	}
+}
+
+/**
+ * Function <code>showArray</code> displays elements of the array.
+ * <BR>
+ * @param a An array to be displayed
+ */
+void showArray(const int a[ARRAY_SIZE])
+{
+	for (int i = 0; i < ARRAY_SIZE; i++) {
+		cout << a[i] << " ";
 	}
 }
 
