@@ -17,7 +17,7 @@ using namespace std;
 void showMenu();
 void readArray(int[]);
 void showArray(const int[]);
-int sumOfArray(int[]);
+int sumOfArray(const int[]);
 void nullArray(int[]);
 
 //Global Constants
@@ -84,6 +84,7 @@ void readArray(int a[ARRAY_SIZE])
 
 /**
  * Function <code>showArray</code> displays elements of the array.
+ * Assumed that the array is initiliased
  * <BR>
  * @param a An array to be displayed
  */
@@ -97,11 +98,12 @@ void showArray(const int a[ARRAY_SIZE])
 
 /**
  * Function <code>sumOfArray</code> computes the sum of all elements in the array.
+ * Assumed that the array is initiliased
  * <BR>
  * @param a An array to be summed
  * @return sum Result of the addition
  */
-int sumOfArray(int a[ARRAY_SIZE])
+int sumOfArray(const int a[ARRAY_SIZE])
 {
 	int sum = 0;
 	for (int i = 0; i < ARRAY_SIZE; i++) {
