@@ -13,6 +13,16 @@
 #include <cassert>
 using namespace std;
 
+//Function prototypes
+void showMenu();
+void readArray(int[]);
+void showArray(int[]);
+int sumOfArray(int[]);
+void nullArray(int[]);
+
+//Global Constants
+const int ARRAY_SIZE = 15;
+
 /**
  * The <code>main</code> is the driver function.
  * <BR>
@@ -20,6 +30,41 @@ using namespace std;
  */
 int main()
 {
- 
+	int choice;
+	int array[ARRAY_SIZE];
+
+	do {
+		showMenu();
+		cin >> choice;
+		switch (choice) {
+		case 1: //readArray
+			break;
+		case 2: //showArray
+			break;
+		case 3: //sumOfArray
+			break;
+		case 4: //nullArray
+			break;
+		case 5: //Exit
+			break;
+		default:
+			break;
+		}
+	} while (choice != 5);
+}
+
+/**
+ * Function <code>showMenu</code> displays the menu that is used from
+ * the main program
+ * <BR>
+ */
+void showMenu()
+{
+	cout << "1) Enter data in array \n";
+	cout << "2) Show array \n";
+	cout << "3) Sum of all elements of the array \n";
+	cout << "4) Make all elements of the array 0 \n";
+	cout << "5) Exit \n";
+	cout << "Please enter your choice: ";
 }
 
