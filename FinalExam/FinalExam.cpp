@@ -43,7 +43,7 @@ int main()
 			break;
 		case 3: cout << sumOfArray(array) << endl;
 			break;
-		case 4: //nullArray
+		case 4: nullArray(array);
 			break;
 		case 5: //Exit
 			break;
@@ -108,5 +108,18 @@ int sumOfArray(int a[ARRAY_SIZE])
 		sum += a[i];
 	}
 	return sum;
+}
+
+/**
+ * Function <code>nullArray</code> turns all elements into 0 in the array.
+ * <BR>
+ * @param a An array to be manipulated
+ */
+void nullArray(int a[ARRAY_SIZE])
+{
+	for (int i = 0; i < ARRAY_SIZE; i++) {
+		a[i] = 0;
+	}
+	cout << "The array has been nullified! \n";
 }
 
